@@ -1,0 +1,4 @@
+package_url: 'http://repo2.nine.ch/software'
+package_name: 'mkeventd'
+package_description: 'The Check_MK Event Console'
+package_website: 'http://mathias-kettner.de/checkmk_mkeventd.html'

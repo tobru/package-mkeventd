@@ -1,0 +1,4 @@
+# Defaults for mkeventd
+PIPE="/var/run/nagios/rw/events"
+SOCKET="/var/run/nagios/eventstatus"
+PID="/var/run/mkeventd.pid"

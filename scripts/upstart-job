@@ -1,0 +1,16 @@
+# mkeventd - The Check_MK Event Console
+#
+# by Matthias Kettner <mk@mathias-kettner.de>
+
+description "mkeventd"
+author "Tobias Brunner <tobru@nine.ch>"
+
+start on runlevel [2345]
+stop on runlevel [06]
+
+respawn
+
+script
+    . /etc/default/mkeventd
+    exec /usr/local/bin/mkeventd -P $PIPE -p $PID -S $SOCKET
+end script
