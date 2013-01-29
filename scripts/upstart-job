@@ -12,5 +12,5 @@ respawn
 
 script
     . /etc/default/mkeventd
-    exec /usr/local/bin/mkeventd -P $PIPE -p $PID -S $SOCKET
+    exec /usr/local/bin/mkeventd -P $PIPE -p $PID -S $SOCKET -vg
 end script

@@ -46,6 +46,7 @@ task :build do
 -n #{config['package_name']} \
 --prefix / \
 -v #{version} \
+--config-files "etc/check_mk/mkeventd.mk" \
 -a all \
 --description \"#{config['package_description']}\" \
 --url \"#{config['package_website']}\" \
