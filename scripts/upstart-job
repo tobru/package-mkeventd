@@ -9,6 +9,7 @@ start on runlevel [2345]
 stop on runlevel [06]
 
 respawn
+setuid www-data
 
 script
     . /etc/default/mkeventd
